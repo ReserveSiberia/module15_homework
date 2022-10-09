@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_2</title>
+    <style>
+        .root {
+            position: relative;
+            height: 100vh;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            background-color: darkorange;
+            transition: background-color linear 0.2s;
+        }
+
+        .btn:hover {
+            background-color: rgb(219, 146, 57);
+            transition: background-color linear 0.2s;
+        }
+
+        .btn__text {
+            margin: 0 auto;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <button class="btn">
+            <p class="btn__text">Click Me</p>
+        </button>
+    </div>
+
+    <script>
+        const btn = document.querySelector('.btn')
+        const screenWidth = window.screen.width
+        const screenHeight = window.screen.height
+        const resultStr = 
+        `Screen width: ${screenWidth}\nScreen height: ${screenHeight}`
+        btn.addEventListener('click', () => {
+            alert(resultStr)
+        })
+    </script>
+</body>
+</html>

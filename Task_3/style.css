@@ -1,0 +1,79 @@
+.chat {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.userInput {
+    display: flex;
+    border: 2px solid rgb(105, 66, 197);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    background-color: rgb(29, 2, 92);
+}
+
+.userInput__msg {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.msgWindow {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    border: 2px solid rgb(49, 197, 160);
+    height: 480px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px;
+    background-color: rgb(4, 83, 64);
+}
+
+.userInput__btn {
+    background-color: rgb(73, 210, 219);
+    text-transform: uppercase;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(69, 43, 131);
+    font-weight: 700;
+    cursor: pointer;
+
+    margin-left: 20px;
+
+    transition: background-color linear .2s;
+}
+
+.userInput__btn:hover {
+    background-color: rgb(140, 244, 252);
+    transition: background-color linear .2s;
+}
+
+.msgUser, .msgServer {
+    height: 50px;
+width: 180px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: rgb(69, 43, 131);
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.msgUser {
+    justify-self: end;
+    background-color: rgb(57, 247, 168);
+}
+
+.msgServer {
+    justify-self: start;
+    background-color: rgb(240, 250, 98);
+}
